@@ -1,168 +1,192 @@
 // @ts-check
 
-const DisplayImg = document.getElementsByClassName('background');
-const TitleNew = document.getElementsByClassName('title');
-const DateNew = document.getElementsByClassName('date');
-const DescriptionNew = document.getElementsByClassName('description');
+const DisplayImg = document.getElementById('background');
+const TitleNew = document.getElementById('title');
+const DateNew = document.getElementById('date');
+const DescriptionNew = document.getElementById('description');
+
+var aryaad = new Audio('arya.wav');
+var branad = new Audio('bran.wav');
+var catelynad = new Audio('catelyn.wav');
+var daenarysad = new Audio('daenarys.wav');
+var jamiead = new Audio('jamie.wav');
+var jonad = new Audio('jon.wav');
+var jorahaad = new Audio('jorah.wav');
+var robad = new Audio('rob.wav');
+var samwellad = new Audio('samwell.wav');
+var sansaad = new Audio('sansa.wav');
+var theonad = new Audio('theon.wav');
+var tryionad = new Audio('tyrion.wav');
 
 function userPicked (modalCard) {
   console.log('user picked called: ' + modalCard);
 
   switch (modalCard) {
     case 'Capricorn':
-      DisplayImg.src = "images/aryastark.jpeg";
+      DisplayImg.src="images/aryastarkcircle.png";
       // title
       TitleNew.innerHTML = "Arya Stark";
       // date range
-      DateNew.innerHTML = "December 22nd - January 19th";
+      DateNew.innerHTML = "December 22 - January 19";
       // description
-      DescriptionNew.innerHTML = "blah blah blah blahblah blah blah blahblah blah blah blahblah blah blah blahblah blah blah blahblah blah blah blah";
+      DescriptionNew.innerHTML = "Arya is the third child and youngest daughter of Lord Ned Stark and his wife Lady Catelyn Stark. She is tomboyish, headstrong, feisty, independent, disdains traditional female pursuits, and is often mistaken for a boy.";
       console.log("the log worked");
-      modal.hidden = !modal.hidden;
+      aryaad.play();
+     
       break;
 
       // Bran
       case 'Sagittarius':
-      DisplayImg.src = "images/branstark.webp";
+      DisplayImg.src = "images/branstarkcircle.png";
       // title
-      TitleNew.innerHTML = "Bran Stark";
+      TitleNew.innerHTML = 'Bran Stark';
       // date range
-      DateNew.innerHTML = "November 22nd - December 21st";
+      DateNew.innerHTML = "November 22 - December 21";
       // description
-      DescriptionNew.innerHTML = "blah blah blah blahblah blah blah blahblah blah blah blahblah blah blah blahblah blah blah blahblah blah blah blah";
+      DescriptionNew.innerHTML = "Bran is a sweet and thoughtful boy, well-loved by everyone at Winterfell. He has a fascination with climbing and exploring along the walls and ramparts of the castle. Catelyn once jested that Bran could climb before he could walk, however, his climbing often distresses her.";
       console.log("the log worked");
-      modal.hidden = !modal.hidden;
+      branad.play();
+     
       break;
 
       //catelyn
       case 'Scorpio':
-      DisplayImg.src = "images/catelynstark.jpeg";
+      DisplayImg.src = "images/catelynstarkcircle.png";
       // title
       TitleNew.innerHTML = "Catelyn Stark";
       // date range
-      DateNew.innerHTML = "December 22th - November 21st";
+      DateNew.innerHTML = "October 24 - November 21st";
       // description
-      DescriptionNew.innerHTML = "blah blah blah blahblah blah blah blahblah blah blah blahblah blah blah blahblah blah blah blahblah blah blah blah";
-
-      modal.hidden = !modal.hidden;
+      DescriptionNew.innerHTML = "Catelyn is proud, strong, kind and generous, has a strong grasp of politics, and is often governed by the desire to protect her children. Catelyn is usually in accord with her husband Eddard Stark, but resents his admission of his extramarital son Jon Snow into their household.";
+      catelynad.play();
+     
       break;
 
       //daenarys
       case 'Libra':
-      DisplayImg.src = "images/daenarys.webp";
+      DisplayImg.src = "images/daenaryscircle.png";
       // title
       TitleNew.innerHTML = "Daenarys";
       // date range
-      DateNew.innerHTML = "December 22th - January 19th";
+      DateNew.innerHTML = "September 23 - October 23";
       // description
-      DescriptionNew.innerHTML = "blah blah blah blahblah blah blah blahblah blah blah blahblah blah blah blahblah blah blah blahblah blah blah blah";
-   
-      modal.hidden = !modal.hidden;
+      DescriptionNew.innerHTML = "Daenarys is strong, persistent, inquisitive, and quietly and intensely determined. She suffered for years after the death of her parents and an extended period of time being treated cruelly by her brother. Others would have been broken, but she only grew stronger.";
+      daenarysad.play()
+     
       break;
 
       //Jamie
       case 'Virgo':
-      DisplayImg.src = "images/jamielannister.webp";
+      DisplayImg.src = "images/jamielannistercircle.png";
       // title
       TitleNew.innerHTML = "Jamie Lannister";
       // date range
-      DateNew.innerHTML = "December 22th - January 19th";
+      DateNew.innerHTML = "August 23 - September 22";
       // description
-      DescriptionNew.innerHTML = "blah blah blah blahblah blah blah blahblah blah blah blahblah blah blah blahblah blah blah blahblah blah blah blah";
-  
-      modal.hidden = !modal.hidden;
+      DescriptionNew.innerHTML = "Jamie is often seen as arrogant, cynical, and utterly pragmatic. It would be easy to label Jaime as evil, but in reality he just practices a form of moral calculus that is very similar to his father, Tywin. A charming rake, Jaime often does questionable things, but usually in service to his family or some perceived greater good.";
+      jamiead.play()
+     
       break;
 
       //John
       case 'Leo':
-      DisplayImg.src = "images/johnsnow.webp";
+      DisplayImg.src = "images/johnsnowcircle.png";
       // title
       TitleNew.innerHTML = "John Snow";
       // date range
-      DateNew.innerHTML = "December 22th - January 19th";
+      DateNew.innerHTML = "July 23 - August 22";
       // description
-      DescriptionNew.innerHTML = "blah blah blah blahblah blah blah blahblah blah blah blahblah blah blah blahblah blah blah blahblah blah blah blah";
-
-      modal.hidden = !modal.hidden;
+      DescriptionNew.innerHTML = "Jon Snow is a stoic, honorable character, who always does what is right, often to his detriment. He cares about people, and as the series progresses, he becomes a leader and a symbol. Jon was the most popular choice overall.";
+      jonad.play()
+     
       break;
 
       //Jorah
       case 'Cancer':
-      DisplayImg.src = "images/jorahmormont.webp";
+      DisplayImg.src = "images/jorahmormontcircle.png";
       // title
       TitleNew.innerHTML = "Jorah Mormont";
       // date range
-      DateNew.innerHTML = "December 22th - January 19th";
+      DateNew.innerHTML = "June 22 - July 22";
       // description
-      DescriptionNew.innerHTML = "blah blah blah blahblah blah blah blahblah blah blah blahblah blah blah blahblah blah blah blahblah blah blah blah";
- 
-      modal.hidden = !modal.hidden;
+      DescriptionNew.innerHTML = "Jorah is extremely loyal and a big romantic, especially as he spends more and more time with Daenerys. He is also a brave and strong knight who thwarts multiple assassination attempts on Daenerys. Still, she is more in love with leading her people than him. The sooner he accepts that, the better for everyone.";
+      jorahaad.play()
+     
       break;
 
       //Robert
-      case 'Gemeni':
-      DisplayImg.src = "images/robertstark.jpeg";
+      case 'Gemini':
+      DisplayImg.src = "images/robertstarkcircle.png";
       // title
-      TitleNew.innerHTML = "Robert Stark";
+      TitleNew.innerHTML = "Robb Stark";
       // date range
-      DateNew.innerHTML = "December 22th - January 19th";
+      DateNew.innerHTML = "May 21 - June 21";
       // description
-      DescriptionNew.innerHTML = "blah blah blah blahblah blah blah blahblah blah blah blahblah blah blah blahblah blah blah blahblah blah blah blah";
+      DescriptionNew.innerHTML = "Robb is honorable, just, and bold. Robb is very much his father's son, both for better and worse. Like Ned, he is a skilled military commander who inspires loyalty among the men he leads. Robb has a very strong sense of honor that drives both his personal and professional decisions.";
+      robad.play()
 
-      modal.hidden = !modal.hidden;
       break;
 
       //SamwelL
       case 'Taurus':
-      DisplayImg.src = "images/samwell.jpeg";
+      DisplayImg.src = "images/samwellcircle.png";
       // title
       TitleNew.innerHTML = "Samwell";
       // date range
-      DateNew.innerHTML = "December 22th - January 19th";
+      DateNew.innerHTML = "April 20 - May 20";
       // description
-      DescriptionNew.innerHTML = "blah blah blah blahblah blah blah blahblah blah blah blahblah blah blah blahblah blah blah blahblah blah blah blah";
-   
-      modal.hidden = !modal.hidden;
+      DescriptionNew.innerHTML = "Samwell is bright and well-educated, but a lousy soldier. Still, Sam is a great and loyal friend to Jon Snow and is extremely intelligent. Not everyone on the Night's Watch can be a master swordsman, so hopefully he can use his brains to get ahead in this harsh, wintry environment.";
+      samwellad.play()
+     
       break;
 
       //Sansa
       case 'Aries':
-      DisplayImg.src = "images/sansastark.webp";
+      DisplayImg.src = "images/sansastarkcircle.png";
       // title
       TitleNew.innerHTML = "Sansa Stark";
       // date range
-      DateNew.innerHTML = "December 22th - January 19th";
+      DateNew.innerHTML = "March 21 - April 19";
       // description
-      DescriptionNew.innerHTML = "blah blah blah blahblah blah blah blahblah blah blah blahblah blah blah blahblah blah blah blahblah blah blah blah";
-  
-      modal.hidden = !modal.hidden;
+      DescriptionNew.innerHTML = "Sansa is described as soft-spoken and sweet-smelling. Raised as a lady, Sansa possesses the traditional feminine graces of her milieu, with a keen interest in music, poetry, singing, dancing, embroidery, and other traditional feminine activities.";
+      sansaad.play()
+     
       break;
 
       //Theon
       case 'Pisces':
-      DisplayImg.src = "images/theongreyjoy.jpeg";
+      DisplayImg.src = "images/theongreyjoycircle.png";
       // title
-      TitleNew.innerHTML = "Theon Greyjoy/h1>";
+      TitleNew.innerHTML = "Theon Greyjoy";
       // date range
-      DateNew.innerHTML = "December 22th - January 19th";
+      DateNew.innerHTML = "February 19 - March 20";
       // description
-      DescriptionNew.innerHTML = "blah blah blah blahblah blah blah blahblah blah blah blahblah blah blah blahblah blah blah blahblah blah blah blah";
-    
-      modal.hidden = !modal.hidden;
+      DescriptionNew.innerHTML = "Theon is described as being an arrogant nineteen-year-old at the start of A Game of Thrones, with dark hair and a cocky grin. He was callous, ambitious and a shameless glory-seeker who lusted after the appreciation and loyalty of others.";
+      theonad.play()
+
       break;
 
       //Tyrion
       case 'Aquarius':
-      DisplayImg.src = "images/tyrionlannister.jpeg";
+      DisplayImg.src = "images/tyrionlannistercircle.png";
       // title
       TitleNew.innerHTML = "Tyrion Lannister";
       // date range
-      DateNew.innerHTML = "December 22th - January 19th";
+      DateNew.innerHTML = "January 20 - February 18";
       // description
-      DescriptionNew.innerHTML = "blah blah blah blahblah blah blah blahblah blah blah blahblah blah blah blahblah blah blah blahblah blah blah blah";
-    
-      modal.hidden = !modal.hidden;
+      DescriptionNew.innerHTML = "Tyrion is clever, witty, and resilient. Tyrion has been mistreated his entire life, and has developed a cynicism as thick as armor in order to help himself cope. He has an acid tongue and is capable of talking his way through just about anything.";
+      tryionad.play()
+     
       break;
+
+      case 'info':
+        DisplayImg.src = "";
+        // title
+        TitleNew.innerHTML = "";
+        // date range
+        DateNew.innerHTML = "";
+        // description 
+      DescriptionNew.innerHTML = "Fill out your birthdate by inputing your what day, month, and year you were born. Click the submit button to see which game of thrones character you are."
   
   }
 }
@@ -181,6 +205,7 @@ const samwell = document.getElementById('Taurus')
 const sansa = document.getElementById('Aries')
 const theon = document.getElementById('Pisces')
 const tyrion = document.getElementById('Aquarius')
+const info = document.getElementById('info')
 
 arya.addEventListener('click', function (evt) {
   console.log('arya button clicked' + evt.target.id); 
@@ -196,7 +221,7 @@ bran.addEventListener('click', function (evt) {
 
 catelyn.addEventListener('click', function (evt) {
   console.log('catelyn button clicked' + evt.target.id);
-  const id = 'scorpio';
+  const id = 'Scorpio';
   userPicked(id);
 });
 
@@ -254,6 +279,13 @@ tyrion.addEventListener('click', function (evt) {
   userPicked(id);
 });
 
+info.addEventListener ('click',function (evt) {
+  console.log('info button clicked'+evt.target.id);
+  const id = 'info';
+  userPicked(id)
+});
+
+
 
 
 // sign based on the birthdate
@@ -307,24 +339,6 @@ if ((month == 12 && day >= 22) || (month == 1 && day <= 19)) {
   userPicked(id);
 
 });
-
-// Modal 
-
-const modal = document.getElementsByClassName('modal');
-const closeModal = document.getElementById('modal-close');
-
-closeModal.addEventListener('click', function() {
-
-  console.log('close modal');
-  stopAllAudio();
-  modal.hidden = !modal.hidden;
-});
-
-
- 
-  // Show the zodiac
-  
- 
 
 
   
